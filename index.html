@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>WebView - A Template Project for Android Studio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="This is a template project for Android Studio that allows you to create an android webview application in minutes. You can use it to create a simple app for your website or as a starting point for your HTML5 based android app.">
+	<link rel="stylesheet" href="//cdn.jsdelivr.net/semantic-ui/2.1.4/semantic.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="ui container">
+    <h1><a href="https://slymax.com">Slymax.com</a> / WebView</h1>
+	  <p>This is a template project for Android Studio that allows you to create an android webview application in minutes. You can use it to create a simple app for your website or as a starting point for your HTML5 based android app.</p>
+    <h3 id="gettingstarted">Getting Started</h3>
+    <ol>
+        <li>
+            <p><a href="http://developer.android.com/sdk/index.html">Install Android Studio</a>, make sure that the <a href="http://developer.android.com/sdk/index.html#Other">Android SDK Tools</a> are properly installed and install the <a href="http://developer.android.com/sdk/installing/adding-packages.html">appropriate packages</a>            for the platforms you want to target.</p>
+        </li>
+        <li>
+            <p><a href="https://github.com/slymax/webview/archive/master.zip">Download</a> or clone this repository and import it into Android Studio.</p>
+        </li>
+    </ol>
+    <h3 id="usingaremotesource">Using a remote source</h3>
+    <p>If you want to create an app that displays the contents of a remote website</p>
+    <ol>
+        <li>
+            <p>uncomment <strong>line 31</strong> in <code>MainActivity.java</code> and change <code>http://example.com</code> to match your remote source</p>
+            <pre><code>mWebView.loadUrl(&quot;http://example.com&quot;);
+        </code></pre></li>
+        <li>
+            <p>uncomment <strong>line 34</strong></p>
+            <pre><code>mWebView.setWebViewClient(new MyAppWebViewClient());
+        </code></pre></li>
+        <li>
+            <p>open the <code>MyAppWebViewClient.java</code> file and replace <code>example.com</code> in <strong>line 12</strong> with your custom url</p>
+            <pre><code>if (Uri.parse(url).getHost().endsWith(&quot;example.com&quot;)) {
+        </code></pre></li>
+    </ol>
+    <h3 id="usingalocalsource">Using a local source</h3>
+    <p>If you want to create a local HTML5 android app</p>
+    <ol>
+        <li>
+            <p>uncomment <strong>line 37</strong> in <code>MainActivity.java</code></p>
+            <pre><code>mWebView.loadUrl(&quot;file:///android_asset/www/index.html&quot;);
+        </code></pre></li>
+        <li>
+            <p>replace the boilerplate website in <code>src/main/assets/www/</code> with your own HTML, CSS and JavaScript files</p>
+        </li>
+    </ol>
+  </div>
+  <div class="footer">
+		<a href="https://slymax.com/">
+			<img src="footer.png" alt="slymax">
+			<div>A <strong>SLYMAX</strong> PROJECT</div>
+		</a>
+	</div>
+</body>
+</html>

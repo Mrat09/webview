@@ -1,0 +1,35 @@
+body {
+    margin: 0;
+    border-top: 7px solid #FF5144;
+    padding-top: 30px;
+    line-height: 1.5em;
+}
+a {
+    color: #FF5144;
+}
+a:hover {
+    color: #FF5144;
+    text-decoration: underline;
+}
+.container {
+  padding-bottom: 30px;
+}
+.footer {
+    width: 100%;
+    bottom: 0px;
+    height: 45px;
+    background-color: #F4F5F6;
+}
+.footer img {
+    float: left;
+    padding: 10px 10px 0 10px;
+    height: 35px;
+}
+.footer div {
+    color: #BFBFBF;
+    padding-top: 12px;
+    float: left;
+}
+.footer strong {
+    font-weight: 700;
+}
